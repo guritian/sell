@@ -29,7 +29,11 @@ public class ProductCategory {
     /**类目编号.*/
     private Integer categoryType;
 
-    private Date updateTime;
-    private Date createTime;
+    public ProductCategory(String categoryName, Integer categoryType) {
+        this.categoryName = categoryName;
+        this.categoryType = categoryType;
+    }
+    public ProductCategory(){
 
+    }
 }
