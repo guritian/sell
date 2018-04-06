@@ -1,8 +1,6 @@
 package com.imooc.impl;
 
-import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import com.imooc.dataobject.ProductCategory;
-import com.imooc.service.categoryService;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

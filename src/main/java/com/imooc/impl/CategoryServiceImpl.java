@@ -2,7 +2,7 @@ package com.imooc.impl;
 
 import com.imooc.dataobject.ProductCategory;
 import com.imooc.repository.ProductCategoryRepository;
-import com.imooc.service.categoryService;
+import com.imooc.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,7 +15,7 @@ import java.util.List;
  * Time:21:40
  */
 @Service
-public class CategoryServiceImpl implements categoryService {
+public class CategoryServiceImpl implements CategoryService {
     @Autowired       //引入我们的DAO
     private ProductCategoryRepository repository;
 

@@ -11,7 +11,7 @@ import java.util.List;
  * Date:2018/4/5
  * Time:21:30
  */
-public interface categoryService {
+public interface CategoryService {
     //给后台管理使用的
     ProductCategory findOne(Integer categoryId);
 
