@@ -36,7 +36,7 @@ public class ProductServiceImplTest {
 
     @Test
     public void findOnsaleAll() throws Exception{
-        List<ProductInfo> productInfoList =productService.findOnsaleAll(ProductStatusEnum.UP.getCode());
+        List<ProductInfo> productInfoList =productService.findOnsaleAll();
         Assert.assertNotEquals(0,productInfoList.size());
     }
 
