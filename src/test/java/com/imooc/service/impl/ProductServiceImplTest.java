@@ -1,4 +1,4 @@
-package com.imooc.impl;
+package com.imooc.service.impl;
 
 import com.imooc.dataobject.ProductInfo;
 import com.imooc.enums.ProductStatusEnum;
@@ -13,8 +13,6 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.math.BigDecimal;
 import java.util.List;
-
-import static org.junit.Assert.*;
 
 /**
  * Created with IDEA

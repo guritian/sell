@@ -13,7 +13,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
  */
 public interface OrderMasterRepository extends JpaRepository<OrderMaster,String> {
     //按照买家的OpenID  来查询他的订单   并且会做分页
-    Page<OrderMaster> findByBuyerOpendi(String buyerOpenid, Pageable pageable);
+    Page<OrderMaster> findByBuyerOpenid(String buyerOpenid, Pageable pageable);
 
 
 }
