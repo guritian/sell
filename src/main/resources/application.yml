@@ -14,3 +14,7 @@ server:
 #  file: D:\masterSpring\code\sell\相关文档\日志信息\sell.log
 #  level:
 #    com.imooc.LoggerTest: debug
+
+wechat:
+    mpAppId: wx13f3127cf4b8d83b
+    mpAppSecret: bf26e896c1f8a91ebabafdcad240045f
