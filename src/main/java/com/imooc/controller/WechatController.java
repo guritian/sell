@@ -49,12 +49,13 @@ public class WechatController {
                          @RequestParam("state")String returnUrl){
         WxMpOAuth2AccessToken wxMpOAuth2AccessToken= new WxMpOAuth2AccessToken();
         try {
-            wxMpService.oauth2getAccessToken(code);
+           wxMpOAuth2AccessToken= wxMpService.oauth2getAccessToken(code);
         }catch (WxErrorException e){
             log.error("【微信网页授权】{}",e);
             throw new SellException(ResultEnum.WECHAT_MP_ERROR.getCode(),e.getError().getErrorMsg());
         }
       String openId=  wxMpOAuth2AccessToken.getOpenId();
+        log.info("【微信网页授权】获取openID成功，openId={}",openId);
         return "redirect:"+returnUrl+"?openid="+openId ;
 
     }
